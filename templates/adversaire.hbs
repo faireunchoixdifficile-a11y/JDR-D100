@@ -1,0 +1,78 @@
+<div class="d100-fiche">
+  <header class="d100-entete">
+    <img class="d100-portrait" src="{{actor.img}}" data-edit="img" data-action="editImage" alt="">
+    <div class="d100-identite">
+      <input class="d100-nom" type="text" name="name" value="{{actor.name}}">
+      <div class="d100-ligne">
+        <label>Rang <select name="system.rang">
+          {{#each rangs}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+        <label>Coût <input type="number" name="system.cout" value="{{system.cout}}" min="0"></label>
+      </div>
+      <div class="d100-statut d100-statut-{{system.etat.statut}}">{{statutTxt}}
+        {{#if system.etat.couvert}} · à couvert{{/if}}{{#if system.etat.malus}} · malus −{{system.etat.malus}}{{/if}}{{#if system.etat.aide}} · aide +{{system.etat.aide}}{{/if}}</div>
+    </div>
+    <div class="d100-jauges">
+      <label>PV <input type="number" name="system.pv.value" value="{{system.pv.value}}"> / <input type="number" name="system.pv.max" value="{{system.pv.max}}"></label>
+      <div class="d100-barre pv"><span style="width:{{pvPct}}%"></span></div>
+      <label>PM <input type="number" name="system.pm.value" value="{{system.pm.value}}"> / <input type="number" name="system.pm.max" value="{{system.pm.max}}"></label>
+      <div class="d100-mini">Défense {{system.defense}} · Armure {{system.armure}}</div>
+    </div>
+  </header>
+
+  <section class="d100-bloc">
+    <h2>Caractéristiques et attaque</h2>
+    <div class="d100-stats">
+      {{#each stats}}
+      <div class="d100-stat">
+        <button type="button" class="d100-jet" data-action="rollStat" data-stat="{{key}}">🎲 {{nom}} ({{key}})</button>
+        <div class="d100-valeurs"><label>Valeur <input type="number" name="system.caracs.{{key}}.base" value="{{base}}" min="1" max="30"></label></div>
+        <div class="d100-seuil">seuil {{seuil}}</div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="d100-ligne">
+      <label>Seuil d'attaque <input type="number" name="system.attaque" value="{{system.attaque}}" min="1" max="95"></label>
+      <label>Dégâts <input type="text" name="system.degats" value="{{system.degats}}" size="8"></label>
+      <label>Armure <input type="number" name="system.armureBase" value="{{system.armureBase}}" min="0"></label>
+      <label>Régénération <input type="number" name="system.regen" value="{{system.regen}}" min="0"></label>
+    </div>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Capacités</h2>
+    <div class="d100-ligne d100-cases">
+      <label><input type="checkbox" name="system.distance" {{#if system.distance}}checked{{/if}}> Tireur</label>
+      <label><input type="checkbox" name="system.armeNaturelle" {{#if system.armeNaturelle}}checked{{/if}}> Morsure</label>
+      <label><input type="checkbox" name="system.drain" {{#if system.drain}}checked{{/if}}> Drain (soigne en mordant)</label>
+      <label><input type="checkbox" name="system.souffle" {{#if system.souffle}}checked{{/if}}> Souffle</label>
+      <label><input type="checkbox" name="system.rage" {{#if system.rage}}checked{{/if}}> Rage</label>
+    </div>
+    <div class="d100-ligne">
+      <label>Élément de ses attaques <input type="text" name="system.element" value="{{system.element}}" size="10" placeholder="feu, froid..."></label>
+      <label>Résiste à <input type="text" name="system.resist" value="{{system.resist}}" size="14" placeholder="feu, froid"></label>
+      <label>Malus lumière vive <input type="number" name="system.malusLumiere" value="{{system.malusLumiere}}" min="0"></label>
+    </div>
+    <label class="d100-bloc-texte">Particularité <textarea name="system.trait" rows="3">{{system.trait}}</textarea></label>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Actions</h2>
+    <div class="d100-ligne d100-combat">
+      <button type="button" data-action="attaque">⚔ Attaquer</button>
+      {{#if system.armeNaturelle}}<button type="button" data-action="morsure">🦷 Morsure</button>{{/if}}
+      {{#if system.souffle}}<button type="button" data-action="souffle">🔥 Souffle</button>{{/if}}
+      <button type="button" data-action="couvert">🛡 À couvert</button>
+      <button type="button" data-action="aider">🤝 Aider (+20)</button>
+      <button type="button" data-action="soigner">✚ Premiers secours</button>
+      <button type="button" data-action="fuir">🏃 Fuir (seuil {{system.seuilFuite}})</button>
+      <button type="button" data-action="repos">🛏 Remettre à neuf</button>
+    </div>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Sorts <button type="button" class="d100-ajout" data-action="itemCreate" data-type="sort">＋ Nouveau sort</button></h2>
+    <ul class="d100-liste">
+      {{#each sorts}}<li data-item-id="{{id}}"><button type="button" class="d100-jet" data-action="sort">✨ {{name}}</button> {{system.cout}} PM · {{typeTxt}}{{#if system.valeur}} {{system.valeur}}{{/if}}{{#if system.zone}} · zone{{/if}}<span class="d100-actions"><a data-action="itemEdit">✎</a> <a data-action="itemDelete">🗑</a></span></li>{{/each}}
+    </ul>
+  </section>
+</div>

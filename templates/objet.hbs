@@ -1,0 +1,104 @@
+<div class="d100-objet">
+  <header class="d100-entete-objet">
+    <img src="{{item.img}}" data-edit="img" data-action="editImage" alt="">
+    <input class="d100-nom" type="text" name="name" value="{{item.name}}">
+  </header>
+
+  {{#if est.race}}
+  <section class="d100-bloc">
+    <h2>Race <small>budget {{system.budget}} points (6, ou 8 accordés par le MJ)</small></h2>
+    <div class="d100-ligne">
+      {{#each bonusRaceCaracs}}<label>{{nom}} ({{key}}) <input type="number" name="system.mods.{{key}}" value="{{lookup ../system.mods key}}" min="-5" max="5"></label>{{/each}}
+    </div>
+    <div class="d100-ligne">
+      <label>PV <input type="number" name="system.pv" value="{{system.pv}}"></label>
+      <label>PM <input type="number" name="system.pm" value="{{system.pm}}"></label>
+      <label>Armure <input type="number" name="system.armure" value="{{system.armure}}" min="0"></label>
+      <label>Régénération <input type="number" name="system.regen" value="{{system.regen}}" min="0"></label>
+      <label>Budget <input type="number" name="system.budget" value="{{system.budget}}" min="0"></label>
+    </div>
+    <div class="d100-ligne d100-cases">
+      <label><input type="checkbox" name="system.rage" {{#if system.rage}}checked{{/if}}> Rage</label>
+      <label><input type="checkbox" name="system.souffle" {{#if system.souffle}}checked{{/if}}> Souffle</label>
+      <label><input type="checkbox" name="system.armeNaturelle" {{#if system.armeNaturelle}}checked{{/if}}> Morsure</label>
+      <label><input type="checkbox" name="system.drain" {{#if system.drain}}checked{{/if}}> Drain</label>
+    </div>
+    <div class="d100-ligne">
+      <label>Résiste à <input type="text" name="system.resist" value="{{system.resist}}" placeholder="feu, froid"></label>
+      <label>Compétences libres en plus <input type="number" name="system.libres" value="{{system.libres}}" min="0" max="2"></label>
+      <label>Notion en plus <input type="number" name="system.rangBonus" value="{{system.rangBonus}}" min="0" max="1"></label>
+    </div>
+    {{#if system.libres}}<p class="d100-aide">Race à bonus au choix ({{system.libres}} × +1) : réglez les bonus effectifs de votre personnage dans les champs ci-dessus.</p>{{/if}}
+    <h3>Modificateurs de compétence <button type="button" data-action="compAdd">＋</button></h3>
+    {{#each system.comp}}
+    <div class="d100-ligne">
+      <input type="text" name="system.comp.{{@index}}.nom" value="{{nom}}" placeholder="Compétence">
+      <select name="system.comp.{{@index}}.carac">
+        {{#each ../bonusRaceCaracs}}<option value="{{key}}" {{#if (d100eq key ../carac)}}selected{{/if}}>{{key}}</option>{{/each}}
+      </select>
+      <input type="number" name="system.comp.{{@index}}.bonus" value="{{bonus}}" step="10" min="-20" max="20">
+      <a data-action="compDel" data-index="{{@index}}">🗑</a>
+    </div>
+    {{/each}}
+    <label class="d100-bloc-texte">Conditions (ex : Lumière vive -10, Obscurité +20)<textarea name="system.conditions" rows="2">{{system.conditions}}</textarea></label>
+    <label class="d100-bloc-texte">Traits<textarea name="system.traits" rows="3">{{system.traits}}</textarea></label>
+  </section>
+  {{/if}}
+
+  {{#if est.competence}}
+  <section class="d100-bloc">
+    <div class="d100-ligne">
+      <label>Caractéristique <select name="system.carac">{{#each caracs}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label>Rang <select name="system.rang">{{#each rangs}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    </div>
+    <label class="d100-bloc-texte">Domaine couvert (une phrase)<input type="text" name="system.domaine" value="{{system.domaine}}"></label>
+    <label class="d100-bloc-texte">Équivalent du catalogue (ex : Premiers secours)<input type="text" name="system.equivalent" value="{{system.equivalent}}"></label>
+    <div class="d100-ligne">
+      <label>Taille du domaine <select name="system.taille">{{#each tailles}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label>État <select name="system.statut" {{#unless gm}}{{/unless}}>{{#each statuts}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    </div>
+    <p class="d100-aide">Bonus effectif : <strong>+{{system.bonus}}</strong>. Seul le MJ devrait modifier l'état et corriger la taille.</p>
+    <label class="d100-bloc-texte">Note du MJ<input type="text" name="system.noteMj" value="{{system.noteMj}}"></label>
+  </section>
+  {{/if}}
+
+  {{#if est.arme}}
+  <section class="d100-bloc d100-ligne">
+    <label>Dégâts <select name="system.degats">{{#each degatsArme}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label><input type="checkbox" name="system.distance" {{#if system.distance}}checked{{/if}}> Arme de tir (+1 pt)</label>
+    <label><input type="checkbox" name="system.equipe" {{#if system.equipe}}checked{{/if}}> Équipée</label>
+  </section>
+  {{/if}}
+
+  {{#if est.armure}}
+  <section class="d100-bloc d100-ligne">
+    <label>Valeur (0 à 3) <input type="number" name="system.valeur" value="{{system.valeur}}" min="0" max="3"></label>
+    <label><input type="checkbox" name="system.bouclier" {{#if system.bouclier}}checked{{/if}}> Bouclier (+1 armure, valeur ignorée)</label>
+    <label><input type="checkbox" name="system.equipe" {{#if system.equipe}}checked{{/if}}> Portée</label>
+  </section>
+  {{/if}}
+
+  {{#if est.objet}}
+  <section class="d100-bloc">
+    <label class="d100-bloc-texte">Usage<input type="text" name="system.usage" value="{{system.usage}}"></label>
+    <label>Bonus <select name="system.bonus">{{#each bonusObjet}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+  </section>
+  {{/if}}
+
+  {{#if est.sort}}
+  <section class="d100-bloc">
+    <div class="d100-ligne">
+      <label>Type <select name="system.type">{{#each typesSort}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label>Dés (dégâts/soin : 1d6 à 4d6) <input type="text" name="system.valeur" value="{{system.valeur}}" size="6"></label>
+      <label>Ampleur (effet libre) <select name="system.ampleur">{{#each ampleurs}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label><input type="checkbox" name="system.zone" {{#if system.zone}}checked{{/if}}> Zone (+2 PM, effets ÷ 2)</label>
+    </div>
+    <p class="d100-aide">Coût : <strong>{{system.cout}} PM</strong> (9 PM au maximum). 3 sorts au maximum.</p>
+    <label class="d100-bloc-texte">Description<textarea name="system.description" rows="3">{{system.description}}</textarea></label>
+  </section>
+  {{/if}}
+
+  {{#unless est.sort}}{{#unless est.race}}{{#unless est.competence}}
+  <label class="d100-bloc-texte">Description<textarea name="system.description" rows="3">{{system.description}}</textarea></label>
+  {{/unless}}{{/unless}}{{/unless}}
+</div>

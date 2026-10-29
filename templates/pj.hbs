@@ -1,0 +1,126 @@
+<div class="d100-fiche">
+  <header class="d100-entete">
+    <img class="d100-portrait" src="{{actor.img}}" data-edit="img" data-action="editImage" alt="">
+    <div class="d100-identite">
+      <input class="d100-nom" type="text" name="name" value="{{actor.name}}" placeholder="Nom du personnage">
+      <div class="d100-race">
+        {{#if race}}
+          <a data-action="itemEdit" data-item-id="{{race.id}}" class="d100-lien" title="Ouvrir la race">★ {{race.name}}</a>
+        {{else}}
+          <em>Aucune race : déposez-en une depuis les objets (type Race) ou créez-la.</em>
+          <button type="button" data-action="itemCreate" data-type="race">Créer une race</button>
+        {{/if}}
+      </div>
+      <div class="d100-statut d100-statut-{{system.etat.statut}}">{{statutTxt}}
+        {{#if system.etat.couvert}} · à couvert{{/if}}{{#if system.etat.protege}} · protégé (+2){{/if}}
+        {{#if system.etat.aide}} · aide +{{system.etat.aide}}{{/if}}{{#if system.etat.malus}} · malus −{{system.etat.malus}}{{/if}}</div>
+    </div>
+    <div class="d100-jauges">
+      <label>PV <input type="number" name="system.pv.value" value="{{system.pv.value}}"> / {{system.pv.max}}</label>
+      <div class="d100-barre pv"><span style="width:{{pvPct}}%"></span></div>
+      <label>PM <input type="number" name="system.pm.value" value="{{system.pm.value}}"> / {{system.pm.max}}</label>
+      <div class="d100-barre pm"><span style="width:{{pmPct}}%"></span></div>
+      <div class="d100-mini">Défense {{system.defense}} · Armure {{system.armure}} · Bonus dégâts +{{system.bonusDegats}}</div>
+    </div>
+  </header>
+
+  <section class="d100-bloc">
+    <h2>Caractéristiques <small>(30 points à répartir, de 5 à 15 : total {{system.points.total}}/{{system.points.cible}})</small></h2>
+    <div class="d100-stats">
+      {{#each stats}}
+      <div class="d100-stat">
+        <button type="button" class="d100-jet" data-action="rollStat" data-stat="{{key}}" title="Test de {{nom}}">🎲 {{nom}} ({{key}})</button>
+        <div class="d100-valeurs">
+          <label>Base <input type="number" name="system.caracs.{{key}}.base" value="{{base}}" min="1" max="30"></label>
+          {{#if mod}}<span class="d100-mod">race {{#if (d100pos mod)}}+{{/if}}{{mod}}</span>{{/if}}
+          <strong>{{value}}</strong>
+        </div>
+        <div class="d100-seuil">seuil {{seuil}}</div>
+      </div>
+      {{/each}}
+    </div>
+    {{#if malus}}<p class="d100-alerte">⚠ Compétence méta : −{{malus}} à tous vos seuils.</p>{{/if}}
+    <div class="d100-ligne">
+      <label>d10 PV <input type="number" name="system.pvDe" value="{{system.pvDe}}" min="0" max="10"></label>
+      <label>d10 PM <input type="number" name="system.pmDe" value="{{system.pmDe}}" min="0" max="10"></label>
+      <button type="button" data-action="desVie">🎲 Lancer les d10 PV/PM</button>
+      <button type="button" data-action="repos">🛏 Repos complet</button>
+      <button type="button" data-action="pause">Pause courte (+1d6 PV)</button>
+    </div>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Jets <small>difficulté et modificateur s'appliquent aux tests de compétence et de caractéristique</small></h2>
+    <div class="d100-ligne">
+      <label>Difficulté
+        <select name="system.reglages.difficulte">{{#each difficultes}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select>
+      </label>
+      <label>Modificateur <input type="number" name="system.reglages.modif" value="{{system.reglages.modif}}"></label>
+    </div>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Compétences <button type="button" class="d100-ajout" data-action="itemCreate" data-type="competence">＋ Nouvelle compétence</button></h2>
+    <p class="d100-aide">Inventez-les (Cuisinier, Bibliothécaire...). Elles sont proposées au MJ : trop large = bonus ÷ 2 ; méta = aucun bonus et −10 à tous les seuils.</p>
+    <table class="d100-table">
+      <thead><tr><th>Compétence</th><th>Carac.</th><th>Rang</th><th>Seuil</th><th>Voisin</th><th></th></tr></thead>
+      <tbody>
+      {{#each competences}}
+        <tr data-item-id="{{id}}">
+          <td><button type="button" class="d100-jet" data-action="rollComp" data-nom="{{name}}">🎲 {{name}}</button>
+              {{#if tailleTxt}}<span class="d100-badge">{{tailleTxt}}</span>{{/if}}{{#if statutTxt}}<span class="d100-badge">{{statutTxt}}</span>{{/if}}</td>
+          <td>{{system.carac}}</td><td>+{{system.rang}}</td>
+          <td><strong>{{seuil}}</strong></td>
+          <td><button type="button" class="d100-petit" data-action="rollCompVoisin" data-nom="{{name}}" title="Domaine voisin : moitié du bonus">{{voisin}}</button></td>
+          <td class="d100-actions"><a data-action="itemEdit" title="Modifier">✎</a> <a data-action="itemDelete" title="Supprimer">🗑</a></td>
+        </tr>
+      {{/each}}
+      {{#each racesComp}}
+        <tr><td><button type="button" class="d100-jet" data-action="rollComp" data-nom="{{nom}}">🎲 {{nom}}</button> <span class="d100-badge">race</span></td><td></td><td>+{{bonus}}</td><td><strong>{{seuil}}</strong></td><td></td><td></td></tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Combat</h2>
+    <p class="d100-aide">Ciblez un jeton (touche T) avant d'agir : la défense, l'armure et le couvert de la cible sont pris en compte ; les boutons de la carte de chat appliquent les effets (MJ ou propriétaire).</p>
+    <div class="d100-ligne d100-combat">
+      <button type="button" data-action="attaque">⚔ Attaquer</button>
+      {{#if system.traits.armeNaturelle}}<button type="button" data-action="morsure">🦷 Morsure</button>{{/if}}
+      {{#if system.traits.souffle}}<button type="button" data-action="souffle">🔥 Souffle</button>{{/if}}
+      <button type="button" data-action="couvert">🛡 À couvert</button>
+      <button type="button" data-action="aider">🤝 Aider (+20)</button>
+      <button type="button" data-action="soigner">✚ Premiers secours</button>
+      <button type="button" data-action="fuir">🏃 Fuir (seuil {{system.seuilFuite}})</button>
+    </div>
+    <div class="d100-mini">Seuil d'attaque {{system.attaque}} · {{system.arme.nom}} {{system.arme.degats}}{{#if system.arme.distance}} (tir){{/if}}{{#if system.bonusDegats}}+{{system.bonusDegats}}{{/if}}
+      {{#if system.regen}} · régénération {{system.regen}}/round{{/if}}</div>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Équipement <small class="{{#if system.budget.equipDepasse}}d100-depasse{{/if}}">{{system.budget.equip}}/{{system.budget.equipMax}} points</small>
+      <span class="d100-ajouts">
+        <button type="button" class="d100-ajout" data-action="itemCreate" data-type="arme">＋ Arme</button>
+        <button type="button" class="d100-ajout" data-action="itemCreate" data-type="armure">＋ Armure</button>
+        <button type="button" class="d100-ajout" data-action="itemCreate" data-type="objet">＋ Objet</button></span></h2>
+    <ul class="d100-liste">
+      {{#each armes}}<li data-item-id="{{id}}"><a data-action="itemEquip" title="Équiper / retirer">{{#if system.equipe}}◉{{else}}○{{/if}}</a> ⚔ <strong>{{name}}</strong> {{system.degats}}{{#if system.distance}} (tir){{/if}} {{#unless system.equipe}}<em>(non équipée)</em>{{/unless}}<span class="d100-actions"><a data-action="itemEdit">✎</a> <a data-action="itemDelete">🗑</a></span></li>{{/each}}
+      {{#each armures}}<li data-item-id="{{id}}"><a data-action="itemEquip" title="Porter / retirer">{{#if system.equipe}}◉{{else}}○{{/if}}</a> 🛡 <strong>{{name}}</strong> {{#if system.bouclier}}bouclier (+1){{else}}armure {{system.valeur}}{{/if}} {{#unless system.equipe}}<em>(non portée)</em>{{/unless}}<span class="d100-actions"><a data-action="itemEdit">✎</a> <a data-action="itemDelete">🗑</a></span></li>{{/each}}
+      {{#each objets}}<li data-item-id="{{id}}">🎒 <strong>{{name}}</strong> {{#if system.bonus}}(+{{system.bonus}}){{/if}} <em>{{system.usage}}</em><span class="d100-actions"><a data-action="itemEdit">✎</a> <a data-action="itemDelete">🗑</a></span></li>{{/each}}
+    </ul>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Magie <small class="{{#if system.budget.sortsDepasse}}d100-depasse{{/if}}">{{system.budget.sorts}}/{{system.budget.sortsMax}} sorts</small>
+      <button type="button" class="d100-ajout" data-action="itemCreate" data-type="sort">＋ Nouveau sort</button></h2>
+    <ul class="d100-liste">
+      {{#each sorts}}<li data-item-id="{{id}}"><button type="button" class="d100-jet" data-action="sort">✨ {{name}}</button> {{system.cout}} PM · {{typeTxt}}{{#if system.valeur}} {{system.valeur}}{{/if}}{{#if system.zone}} · zone{{/if}}<span class="d100-actions"><a data-action="itemEdit">✎</a> <a data-action="itemDelete">🗑</a></span></li>{{/each}}
+    </ul>
+  </section>
+
+  <section class="d100-bloc">
+    <h2>Notes</h2>
+    <textarea name="system.notes" rows="5">{{system.notes}}</textarea>
+  </section>
+</div>

@@ -1,0 +1,19 @@
+{
+  "id": "jdr-d100",
+  "title": "JDR D100",
+  "description": "Système de jeu D100 simple et rapide pour des one-shots de 2 heures, de toute époque : 3 caractéristiques, compétences, races, équipement et magie libres dans des budgets de points, combat et bestiaire. Généré par l'application JDR D100.",
+  "version": "1.20261029.1559",
+  "compatibility": { "minimum": "14", "verified": "14.369" },
+  "authors": [{ "name": "Geoffroy" }],
+  "esmodules": ["module/jdr-d100.mjs"],
+  "styles": ["css/jdr-d100.css"],
+  "languages": [{ "lang": "fr", "name": "Français", "path": "lang/fr.json" }],
+  "documentTypes": {
+    "Actor": { "pj": {}, "adversaire": {} },
+    "Item": { "race": {}, "competence": {}, "arme": {}, "armure": {}, "objet": {}, "sort": {} }
+  },
+  "primaryTokenAttribute": "pv",
+  "secondaryTokenAttribute": "pm",
+  "grid": { "distance": 1.5, "units": "m" },
+  "socket": false
+}

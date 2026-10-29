@@ -1,0 +1,4998 @@
+{
+ "generation": "2026-10-29T15:59:12",
+ "races": [
+  {
+   "name": "Humain",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 0,
+     "ESP": 0,
+     "PRE": 0
+    },
+    "libres": 2,
+    "rangBonus": 1,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [],
+    "conditions": "",
+    "traits": "",
+    "cout": 5,
+    "budget": 6,
+    "description": "<p>+1 à deux caractéristiques au choix, une 7e compétence (Notion +5)</p>"
+   }
+  },
+  {
+   "name": "Elfe",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 1,
+     "ESP": 1,
+     "PRE": 0
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [
+     {
+      "nom": "Perception",
+      "carac": "ESP",
+      "bonus": 10
+     }
+    ],
+    "conditions": "Obscurité +20",
+    "traits": "",
+    "cout": 6,
+    "budget": 6,
+    "description": "<p>Vision nocturne (aucun malus dans l'obscurité), +10 en Perception</p>"
+   }
+  },
+  {
+   "name": "Elfe des ténèbres",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 1,
+     "ESP": 0,
+     "PRE": 1
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [
+     {
+      "nom": "Discrétion",
+      "carac": "COR",
+      "bonus": 10
+     }
+    ],
+    "conditions": "Obscurité +20\nLumière vive -10",
+    "traits": "",
+    "cout": 5,
+    "budget": 6,
+    "description": "<p>Vision nocturne, +10 en Discrétion, -10 aux tests et attaques en lumière vive</p>"
+   }
+  },
+  {
+   "name": "Orque",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 2,
+     "ESP": 0,
+     "PRE": -1
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": true,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [],
+    "conditions": "",
+    "traits": "",
+    "cout": 4,
+    "budget": 6,
+    "description": "<p>Rage : une fois par combat, +10 aux 3 premières attaques lancées</p>"
+   }
+  },
+  {
+   "name": "Gobelin",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 0,
+     "ESP": 1,
+     "PRE": 0
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [
+     {
+      "nom": "Discrétion",
+      "carac": "COR",
+      "bonus": 10
+     },
+     {
+      "nom": "Intimidation",
+      "carac": "PRE",
+      "bonus": -10
+     }
+    ],
+    "conditions": "Poison +20",
+    "traits": "Petite taille",
+    "cout": 4,
+    "budget": 6,
+    "description": "<p>Petite taille (+10 en Discrétion, -10 en Intimidation), +20 aux tests contre un poison</p>"
+   }
+  },
+  {
+   "name": "Ogre",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 3,
+     "ESP": -1,
+     "PRE": -1
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 5,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [
+     {
+      "nom": "Discrétion",
+      "carac": "COR",
+      "bonus": -10
+     }
+    ],
+    "conditions": "",
+    "traits": "Grande taille",
+    "cout": 3,
+    "budget": 6,
+    "description": "<p>Grande taille (+5 PV, -10 en Discrétion)</p>"
+   }
+  },
+  {
+   "name": "Troll",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 3,
+     "ESP": -2,
+     "PRE": -2
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 1,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [],
+    "conditions": "",
+    "traits": "",
+    "cout": 0,
+    "budget": 6,
+    "description": "<p>Régénération : 1 PV par tour</p>"
+   }
+  },
+  {
+   "name": "Démon",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 0,
+     "ESP": 1,
+     "PRE": 1
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 5,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "feu",
+    "comp": [],
+    "conditions": "",
+    "traits": "",
+    "cout": 6,
+    "budget": 6,
+    "description": "<p>Dégâts de feu divisés par 2, +5 PM</p>"
+   }
+  },
+  {
+   "name": "Vampire",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 0,
+     "ESP": 0,
+     "PRE": 2
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 0,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": true,
+    "drain": true,
+    "resist": "",
+    "comp": [],
+    "conditions": "Lumière vive -20",
+    "traits": "",
+    "cout": 4,
+    "budget": 6,
+    "description": "<p>Morsure 1d4 qui le soigne des PV infligés ; -20 aux tests et attaques en plein soleil</p>"
+   }
+  },
+  {
+   "name": "Draconien",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 2,
+     "ESP": 0,
+     "PRE": 0
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 2,
+    "regen": 0,
+    "rage": false,
+    "souffle": true,
+    "armeNaturelle": false,
+    "drain": false,
+    "resist": "",
+    "comp": [],
+    "conditions": "",
+    "traits": "",
+    "cout": 8,
+    "budget": 6,
+    "description": "<p>+2 d'armure ; souffle 2d6 une fois par combat (esquive sur Corps, ignore l'armure)</p>"
+   }
+  },
+  {
+   "name": "Homme bête",
+   "type": "race",
+   "system": {
+    "mods": {
+     "COR": 1,
+     "ESP": 0,
+     "PRE": 1
+    },
+    "libres": 0,
+    "rangBonus": 0,
+    "pv": 0,
+    "pm": 0,
+    "armure": 2,
+    "regen": 0,
+    "rage": false,
+    "souffle": false,
+    "armeNaturelle": true,
+    "drain": false,
+    "resist": "",
+    "comp": [
+     {
+      "nom": "Instinct naturelle",
+      "carac": "PRE",
+      "bonus": 20
+     }
+    ],
+    "conditions": "Chaleur -20\nFroid +20",
+    "traits": "",
+    "cout": 8,
+    "budget": 8,
+    "description": "<p>« Entre l'homme et la bête existe un peuple qui porte en lui la force de deux mondes. »</p><p>Les Hommes-bêtes sont une race née d'anciennes transformations magiques ayant mêlé la nature humaine à celle des animaux. Selon les légendes, ils seraient les descendants d'humains frappés par une malédiction, les sujets d'expériences de mages oubliés ou les héritiers d'un rituel destiné à unir les peuples aux forces de la nature. La vérité sur leur origine demeure incertaine, et chaque lignée conserve ses propres récits sur sa naissance.</p><p>Leur apparence varie considérablement selon leur ascendance animale. Certains possèdent un corps couvert de fourrure, un museau allongé, des oreilles dressées et une queue, tandis que d'autres arborent des écailles, des cornes, des bois ou des griffes acérées. Malgré ces différences, ils conservent généralement une silhouette humanoïde, leur permettant de manier des armes, de porter des vêtements et d'utiliser les outils des autres peuples. Leur regard, leurs traits et leur posture révèlent toutefois leur nature singulière.</p><p>Cette transformation leur confère souvent des capacités particulières héritées de leur ascendance. Un odorat développé, une ouïe fine, une vision adaptée à l'obscurité, une force supérieure ou une agilité remarquable comptent parmi leurs aptitudes les plus courantes. Ces facultés diffèrent d'une lignée à l'autre et ne constituent pas nécessairement des avantages sans contrepartie.</p><p>Les Hommes-bêtes ne forment pas un peuple uni. Leurs sociétés reflètent la diversité de leurs origines et de leurs environnements. Certaines lignées vivent en clans ou en meutes, privilégiant les liens de parenté, l'entraide et la loyauté envers les leurs. D'autres ont fondé des villages, des cités fortifiées ou des royaumes organisés, dotés de lois, de traditions et de structures politiques comparables à celles des civilisations humaines. Certaines communautés demeurent nomades, tandis que d'autres se sont pleinement intégrées aux sociétés des autres races.</p><p>Leur rapport au monde varie tout autant. Certains considèrent leur héritage animal comme une bénédiction, symbole de force et de proximité avec la nature. D'autres le perçoivent comme une marque imposée par la magie, dont ils cherchent à comprendre les origines ou à se libérer. Entre ces deux visions existent d'innombrables croyances, coutumes et philosophies.</p><p>Leur apparence leur vaut parfois la méfiance des autres peuples. Dans certaines régions, ils sont respectés pour leurs talents et leur courage ; dans d'autres, ils sont assimilés à des monstres ou à des créatures sauvages. Ces préjugés peuvent les pousser à se regrouper au sein de communautés isolées, mais ils n'empêchent pas nombre d'entre eux de devenir artisans, marchands, soldats, érudits ou aventuriers.</p><p>Malgré les différences qui les séparent, les Hommes-bêtes partagent une même particularité : ils portent en eux les traces visibles d'une magie ancienne qui a redéfini leur nature. Leur héritage ne détermine pourtant ni leur caractère ni leur destinée. Qu'ils vivent selon les traditions de leurs ancêtres ou qu'ils cherchent leur place parmi les autres peuples, chacun demeure libre de choisir ce qu'il fera de cette double nature.</p><p>Ainsi, les Hommes-bêtes ne sont ni tout à fait humains, ni tout à fait animaux. Ils sont un peuple à part entière, façonné par la magie, dont la diversité témoigne autant de la puissance de cette transformation que de la capacité des êtres vivants à s'adapter et à évoluer.</p>"
+   }
+  }
+ ],
+ "competences": [
+  {
+   "name": "Acrobaties",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "sauter, rouler, garder l'équilibre",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Artisanat",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "fabriquer ou réparer un objet",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Chasse",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "pister et capturer du gibier",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Connaissances",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "savoirs généraux, histoire, sciences",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Discrétion",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "se cacher, se déplacer sans bruit",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Déguisement",
+   "type": "competence",
+   "system": {
+    "carac": "PRE",
+    "rang": 5,
+    "domaine": "changer d'apparence ou d'identité",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Escalade",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "grimper à une paroi",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Escamotage",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "tour de main, dissimuler un objet",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Estimation",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "évaluer la valeur ou l'authenticité",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Intimidation",
+   "type": "competence",
+   "system": {
+    "carac": "PRE",
+    "rang": 5,
+    "domaine": "faire peur, imposer sa volonté",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Natation",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "nager, plonger",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Perception",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "remarquer un détail, un piège, une présence",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Premiers secours",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "soigner une blessure sur le moment",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Profession",
+   "type": "competence",
+   "system": {
+    "carac": "PRE",
+    "rang": 5,
+    "domaine": "métier exercé (à préciser avec le MJ)",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Psychologie",
+   "type": "competence",
+   "system": {
+    "carac": "PRE",
+    "rang": 5,
+    "domaine": "deviner les intentions, détecter un mensonge",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Représentation",
+   "type": "competence",
+   "system": {
+    "carac": "PRE",
+    "rang": 5,
+    "domaine": "chanter, jouer, raconter, divertir",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Sabotage",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "désamorcer, saboter, forcer un mécanisme",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Survie",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "s'orienter, trouver abri et nourriture",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Utilisation d'objet inconnu",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "se servir d'une technologie ou relique inconnue",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Utilisation d'objet magique",
+   "type": "competence",
+   "system": {
+    "carac": "ESP",
+    "rang": 5,
+    "domaine": "activer baguettes, parchemins, artefacts",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Vol",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "vol à la tire / crochetage (voler dans les airs : à voir avec le MJ)",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  },
+  {
+   "name": "Équitation",
+   "type": "competence",
+   "system": {
+    "carac": "COR",
+    "rang": 5,
+    "domaine": "monter et diriger une monture ou un véhicule",
+    "equivalent": "",
+    "taille": "precis",
+    "statut": "validee",
+    "noteMj": ""
+   }
+  }
+ ],
+ "armes": [
+  {
+   "name": "Dague",
+   "type": "arme",
+   "system": {
+    "degats": "1d4",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Bâton",
+   "type": "arme",
+   "system": {
+    "degats": "1d6",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Épée courte",
+   "type": "arme",
+   "system": {
+    "degats": "1d6",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Arc",
+   "type": "arme",
+   "system": {
+    "degats": "1d6",
+    "distance": true,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Épée",
+   "type": "arme",
+   "system": {
+    "degats": "1d8",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Hache",
+   "type": "arme",
+   "system": {
+    "degats": "1d8",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Masse",
+   "type": "arme",
+   "system": {
+    "degats": "1d8",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Lance",
+   "type": "arme",
+   "system": {
+    "degats": "1d8",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Arme à deux mains",
+   "type": "arme",
+   "system": {
+    "degats": "1d10",
+    "distance": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Arbalète",
+   "type": "arme",
+   "system": {
+    "degats": "1d10",
+    "distance": true,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Pistolet",
+   "type": "arme",
+   "system": {
+    "degats": "1d10",
+    "distance": true,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Fusil",
+   "type": "arme",
+   "system": {
+    "degats": "2d6",
+    "distance": true,
+    "equipe": false,
+    "description": ""
+   }
+  }
+ ],
+ "armures": [
+  {
+   "name": "Armure de cuir",
+   "type": "armure",
+   "system": {
+    "valeur": 1,
+    "bouclier": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Cotte de mailles",
+   "type": "armure",
+   "system": {
+    "valeur": 2,
+    "bouclier": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Armure de plaques",
+   "type": "armure",
+   "system": {
+    "valeur": 3,
+    "bouclier": false,
+    "equipe": false,
+    "description": ""
+   }
+  },
+  {
+   "name": "Bouclier",
+   "type": "armure",
+   "system": {
+    "valeur": 0,
+    "bouclier": true,
+    "equipe": false,
+    "description": ""
+   }
+  }
+ ],
+ "sorts": [
+  {
+   "name": "Trait de force",
+   "type": "sort",
+   "system": {
+    "type": "degats",
+    "valeur": "2d6",
+    "zone": false,
+    "ampleur": "",
+    "description": "Un projectile d'énergie pure."
+   }
+  },
+  {
+   "name": "Soin mineur",
+   "type": "sort",
+   "system": {
+    "type": "soin",
+    "valeur": "1d6",
+    "zone": false,
+    "ampleur": "",
+    "description": "Une main posée referme les blessures."
+   }
+  },
+  {
+   "name": "Bénédiction",
+   "type": "sort",
+   "system": {
+    "type": "bonus",
+    "valeur": "",
+    "zone": false,
+    "ampleur": "",
+    "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié."
+   }
+  }
+ ],
+ "adversaires": [
+  {
+   "name": "Gobelin",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Attaque en meute ; fuit quand le chef tombe.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Gobelin",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Gobelin archer",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 45,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Tire depuis les hauteurs ; se replie si on le charge.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Gobelin archer",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Rat géant",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 5,
+     "max": 5
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d4",
+    "armureBase": 0,
+    "trait": "Pullule dans les égouts et les caves ; ses morsures infectent (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Rat géant",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Squelette",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Insensible à la peur et à la douleur ; fragile face aux armes contondantes.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Squelette",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Bandit",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Embuscade ; vise les plus faibles ; se rend si le chef tombe.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Bandit",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Loup",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 9
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 7,
+     "max": 7
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 45,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Chasse en meute et encercle ; mord et recule.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Loup",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Orque pillard",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 16,
+     "max": 16
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 50,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Brutal ; entre en fureur au premier sang (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Orque pillard",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Bandit archer",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 13,
+     "max": 13
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 55,
+    "degats": "1d8",
+    "armureBase": 0,
+    "trait": "Tire depuis un toit ou un arbre ; se met à couvert quand il est visé.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Bandit archer",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Soldat",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 15,
+     "max": 15
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 50,
+    "degats": "1d8+1",
+    "armureBase": 2,
+    "trait": "Discipliné ; protège ses camarades et appelle du renfort.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Soldat",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Cultiste",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 11
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 14,
+     "max": 14
+    },
+    "pm": {
+     "value": 6,
+     "max": 6
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 45,
+    "degats": "1d6+1",
+    "armureBase": 1,
+    "trait": "Fanatique ; lance deux sorts maudits (3 PM chacun) puis se bat au couteau.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     }
+    }
+   ],
+   "prototypeToken": {
+    "name": "Cultiste",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Araignée géante",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 15,
+     "max": 15
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 55,
+    "degats": "1d8",
+    "armureBase": 1,
+    "trait": "Tisse des toiles ; sa morsure venimeuse engourdit (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Araignée géante",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Zombie",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 12
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 18,
+     "max": 18
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 45,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Lent mais acharné ; ne ressent pas la douleur ; sa morsure est contagieuse (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Zombie",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Troll des cavernes",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 30,
+     "max": 30
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 1,
+    "trait": "Régénère 2 PV par tour ; craint le feu et la lumière vive (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 2,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Troll des cavernes",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Golem de pierre",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 14
+     },
+     "ESP": {
+      "base": 4
+     },
+     "PRE": {
+      "base": 4
+     }
+    },
+    "pv": {
+     "value": 30,
+     "max": 30
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 55,
+    "degats": "1d10+2",
+    "armureBase": 3,
+    "trait": "Lent et très résistant ; obéit à un ordre unique.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Golem de pierre",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Ogre",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 32,
+     "max": 32
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 55,
+    "degats": "2d6+2",
+    "armureBase": 1,
+    "trait": "Massue énorme ; brutal et peu malin, se laisse tromper.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Ogre",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Chevalier noir",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 26,
+     "max": 26
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 3,
+    "trait": "Duelliste fier ; défie le PJ le plus fort.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Chevalier noir",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Mage noir",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 14
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 22,
+     "max": 22
+    },
+    "pm": {
+     "value": 12,
+     "max": 12
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 40,
+    "degats": "1d6+1",
+    "armureBase": 0,
+    "trait": "Reste en retrait derrière ses sbires ; lance jusqu'à quatre sorts (3 PM chacun).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     }
+    }
+   ],
+   "prototypeToken": {
+    "name": "Mage noir",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Dragonnet",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 48,
+     "max": 48
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 65,
+    "degats": "2d6+2",
+    "armureBase": 3,
+    "trait": "Vole ; souffle de feu (2d6, une fois par combat, esquive sur Corps, ignore l'armure).",
+    "race": "",
+    "element": "feu",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": true,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Dragonnet",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Seigneur vampire",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 46,
+     "max": 46
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 65,
+    "degats": "2d6+2",
+    "armureBase": 1,
+    "trait": "Hypnotise et séduit ; se soigne en mordant ; -20 en lumière vive.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 20,
+    "souffle": false,
+    "drain": true,
+    "rage": false,
+    "armeNaturelle": true,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Seigneur vampire",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Nécromancien",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 15
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 40,
+     "max": 40
+    },
+    "pm": {
+     "value": 15,
+     "max": 15
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 50,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Relève les morts ; entouré de squelettes ; jusqu'à cinq sorts (3 PM chacun).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     }
+    }
+   ],
+   "prototypeToken": {
+    "name": "Nécromancien",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Hydre",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 52,
+     "max": 52
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 70,
+    "degats": "2d6+3",
+    "armureBase": 2,
+    "trait": "Chaque tête tranchée repousse ; régénère 3 PV par tour ; craint le feu (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 3,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Fantastique médiéval.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Hydre",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Drone de sécurité",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 5,
+     "max": 5
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 45,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Vole ; donne l'alarme dès la première attaque.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Drone de sécurité",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Pirate",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Cupide ; négocie ou fuit si la bataille tourne mal.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Pirate",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Vermine xéno",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 5,
+     "max": 5
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d4",
+    "armureBase": 0,
+    "trait": "Grouille en essaim ; fuit la lumière.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Vermine xéno",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Technicien armé",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Connaît la station ; tente de refermer les portes derrière lui.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Technicien armé",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Garde de sécurité",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 15,
+     "max": 15
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 50,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Suit le protocole ; appelle des renforts.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Garde de sécurité",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Mercenaire",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 15,
+     "max": 15
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 55,
+    "degats": "1d8+1",
+    "armureBase": 2,
+    "trait": "Bien équipé ; communique par radio ; se met à couvert.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction, Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Mercenaire",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Créature xéno",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 16,
+     "max": 16
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 55,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Instinctive ; sensible au feu.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Créature xéno",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Robot ouvrier détourné",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 12
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 18,
+     "max": 18
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 45,
+    "degats": "1d8+1",
+    "armureBase": 2,
+    "trait": "Lent ; ses outils infligent de lourds dégâts.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Robot ouvrier détourné",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Robot de combat",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 28,
+     "max": 28
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 3,
+    "trait": "Aucun état d'âme ; vise le PJ le plus dangereux en priorité.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Robot de combat",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Cyborg",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 28,
+     "max": 28
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 2,
+    "trait": "Implants ; régénère 1 PV par tour.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 1,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Cyborg",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Capitaine pirate",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 26,
+     "max": 26
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 62,
+    "degats": "1d10+2",
+    "armureBase": 2,
+    "trait": "Charismatique ; ses sbires se battent mieux près de lui (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Capitaine pirate",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Xéno alpha",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 30,
+     "max": 30
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 1,
+    "trait": "Bondit sur le plus faible ; sensible au feu.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Xéno alpha",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Reine xéno",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 50,
+     "max": 50
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 70,
+    "degats": "2d6+3",
+    "armureBase": 2,
+    "trait": "Pond des sbires xénos à chaque tour (à décrire) ; régénère 2 PV par tour.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 2,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Reine xéno",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Exo-armure de siège",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 48,
+     "max": 48
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 65,
+    "degats": "2d6+3",
+    "armureBase": 3,
+    "trait": "Canon d'épaule et poings ; surchauffe après trois tours (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Exo-armure de siège",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Mutant colossal",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 52,
+     "max": 52
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 70,
+    "degats": "2d6+3",
+    "armureBase": 2,
+    "trait": "Rendu fou par une expérience ; ne distingue plus alliés et ennemis.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 1,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Science-fiction.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Mutant colossal",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Voyou",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Veut surtout impressionner ; fuit s'il est blessé.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Voyou",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Chien de garde",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 7,
+     "max": 7
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 45,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Fidèle ; mord et ne lâche pas.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Chien de garde",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Vigile",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d6",
+    "armureBase": 0,
+    "trait": "Matraque ; appelle la police.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Vigile",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Cambrioleur",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 8
+     },
+     "ESP": {
+      "base": 6
+     },
+     "PRE": {
+      "base": 6
+     }
+    },
+    "pv": {
+     "value": 6,
+     "max": 6
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Sbire",
+    "cout": 1,
+    "attaque": 40,
+    "degats": "1d4",
+    "armureBase": 0,
+    "trait": "Veut fuir plus que se battre.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Cambrioleur",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Garde du corps",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 15,
+     "max": 15
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 50,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Protège sa cible en priorité.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Garde du corps",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Tueur à gages",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 14,
+     "max": 14
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 60,
+    "degats": "1d8+1",
+    "armureBase": 0,
+    "trait": "Froid ; vise les points faibles.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Tueur à gages",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Fanatique",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 11
+     },
+     "ESP": {
+      "base": 8
+     },
+     "PRE": {
+      "base": 8
+     }
+    },
+    "pv": {
+     "value": 16,
+     "max": 16
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Standard",
+    "cout": 2,
+    "attaque": 50,
+    "degats": "1d8+1",
+    "armureBase": 1,
+    "trait": "Prêt à tout pour la cause ; ignore la douleur (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Fanatique",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Ancien militaire",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 28,
+     "max": 28
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 2,
+    "trait": "Discipline de fer ; connaît les points faibles du groupe.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Ancien militaire",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Chef de gang",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 26,
+     "max": 26
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 60,
+    "degats": "1d10+2",
+    "armureBase": 1,
+    "trait": "Ses hommes se battent mieux tant qu'il est debout (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Chef de gang",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Assassin d'élite",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 13
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pv": {
+     "value": 24,
+     "max": 24
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Élite",
+    "cout": 4,
+    "attaque": 65,
+    "degats": "1d10+2",
+    "armureBase": 1,
+    "trait": "Frappe depuis l'ombre ; disparaît si la cible est prévenue.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Assassin d'élite",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Chef de cartel",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 46,
+     "max": 46
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 70,
+    "degats": "2d6+2",
+    "armureBase": 2,
+    "trait": "Escorté ; négocie, ment et corrompt avant de tuer.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Chef de cartel",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Tueur légendaire",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 44,
+     "max": 44
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 70,
+    "degats": "2d6+3",
+    "armureBase": 1,
+    "trait": "Ancien des forces spéciales ; presque impossible à surprendre.",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": true,
+    "regen": 0,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Tueur légendaire",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "name": "Créature surnaturelle",
+   "type": "adversaire",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 12
+     },
+     "PRE": {
+      "base": 12
+     }
+    },
+    "pv": {
+     "value": 50,
+     "max": 50
+    },
+    "pm": {
+     "value": 0,
+     "max": 0
+    },
+    "rang": "Boss",
+    "cout": 8,
+    "attaque": 70,
+    "degats": "2d6+3",
+    "armureBase": 3,
+    "trait": "Horreur venue d'ailleurs ; insensible aux armes ordinaires (à décrire).",
+    "race": "",
+    "element": "",
+    "resist": "",
+    "distance": false,
+    "regen": 2,
+    "malusLumiere": 0,
+    "souffle": false,
+    "drain": false,
+    "rage": false,
+    "armeNaturelle": false,
+    "description": "<p>Époque(s) : Moderne contemporain.</p>"
+   },
+   "items": [],
+   "prototypeToken": {
+    "name": "Créature surnaturelle",
+    "actorLink": false,
+    "disposition": -1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  }
+ ],
+ "personnages": [
+  {
+   "_id": "e5379413862af0c1",
+   "name": "Antoine",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 10
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pvDe": 3,
+    "pmDe": 4,
+    "pv": {
+     "value": 23,
+     "max": 23
+    },
+    "pm": {
+     "value": 26,
+     "max": 26
+    },
+    "budgetRace": 6,
+    "notes": ""
+   },
+   "items": [
+    {
+     "name": "Humain",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 0,
+       "ESP": 1,
+       "PRE": 1
+      },
+      "libres": 0,
+      "rangBonus": 1,
+      "pv": 0,
+      "pm": 0,
+      "armure": 0,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": false,
+      "drain": false,
+      "resist": "",
+      "comp": [],
+      "conditions": "",
+      "traits": "",
+      "cout": 5,
+      "budget": 6,
+      "description": "<p>+1 à deux caractéristiques au choix, une 7e compétence (Notion +5)</p>"
+     },
+     "_id": "cc9ca20459d31092"
+    },
+    {
+     "name": "Artisanat",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "fabriquer ou réparer un objet",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "a134f875b3c5507a"
+    },
+    {
+     "name": "Connaissances",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 20,
+      "domaine": "savoirs généraux, histoire, sciences",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "adafa1147c0e0743"
+    },
+    {
+     "name": "Discrétion",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "se cacher, se déplacer sans bruit",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "4792430dfaccbde3"
+    },
+    {
+     "name": "Perception",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "remarquer un détail, un piège, une présence",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "8cf7f901ec567062"
+    },
+    {
+     "name": "Premiers secours",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 10,
+      "domaine": "soigner une blessure sur le moment",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "fed69d8843e1cb8e"
+    },
+    {
+     "name": "Psychologie",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "deviner les intentions, détecter un mensonge",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "863b56c0be21c477"
+    },
+    {
+     "name": "Survie",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "s'orienter, trouver abri et nourriture",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "372796c4911c1077"
+    },
+    {
+     "name": "Bâton",
+     "type": "arme",
+     "system": {
+      "degats": "1d6",
+      "distance": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "bcdd61fc6ad63893"
+    },
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     },
+     "_id": "ba86c51b3ddade1e"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Antoine",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "_id": "468d7cc1194feedd",
+   "name": "Charles",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 10
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pvDe": 5,
+    "pmDe": 7,
+    "pv": {
+     "value": 27,
+     "max": 27
+    },
+    "pm": {
+     "value": 28,
+     "max": 28
+    },
+    "budgetRace": 6,
+    "notes": ""
+   },
+   "items": [
+    {
+     "name": "Humain",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 1,
+       "ESP": 1,
+       "PRE": 0
+      },
+      "libres": 0,
+      "rangBonus": 1,
+      "pv": 0,
+      "pm": 0,
+      "armure": 0,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": false,
+      "drain": false,
+      "resist": "",
+      "comp": [],
+      "conditions": "",
+      "traits": "",
+      "cout": 5,
+      "budget": 6,
+      "description": "<p>+1 à deux caractéristiques au choix, une 7e compétence (Notion +5)</p>"
+     },
+     "_id": "2333976a06f36620"
+    },
+    {
+     "name": "Artisanat",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 20,
+      "domaine": "fabriquer ou réparer un objet",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "04926ffe6d285bdb"
+    },
+    {
+     "name": "Chasse",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "pister et capturer du gibier",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "1ef39bdc1d787d72"
+    },
+    {
+     "name": "Déguisement",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 10,
+      "domaine": "changer d'apparence ou d'identité",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "57439abd99008f40"
+    },
+    {
+     "name": "Escalade",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "grimper à une paroi",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "8c6178a9a426bcc3"
+    },
+    {
+     "name": "Intimidation",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "faire peur, imposer sa volonté",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "5594a6fb620a8e1d"
+    },
+    {
+     "name": "Représentation",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "chanter, jouer, raconter, divertir",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "30fc73f29664aaad"
+    },
+    {
+     "name": "Équitation",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "monter et diriger une monture ou un véhicule",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "b04b65d6f348e54b"
+    },
+    {
+     "name": "Épée",
+     "type": "arme",
+     "system": {
+      "degats": "1d8",
+      "distance": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "f5ef51601dead5e8"
+    },
+    {
+     "name": "Armure de cuir",
+     "type": "armure",
+     "system": {
+      "valeur": 1,
+      "bouclier": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "bab5efce18b9e90e"
+    },
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     },
+     "_id": "903ae9fb6115e54f"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Charles",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "_id": "7109722fcdb64c38",
+   "name": "Dracula",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 15
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 5
+     }
+    },
+    "pvDe": 8,
+    "pmDe": 1,
+    "pv": {
+     "value": 38,
+     "max": 38
+    },
+    "pm": {
+     "value": 18,
+     "max": 18
+    },
+    "budgetRace": 6,
+    "notes": "<p>Drain de PV par morsure ; affaibli en plein soleil</p>"
+   },
+   "items": [
+    {
+     "name": "Vampire",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 0,
+       "ESP": 0,
+       "PRE": 2
+      },
+      "libres": 0,
+      "rangBonus": 0,
+      "pv": 0,
+      "pm": 0,
+      "armure": 0,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": true,
+      "drain": true,
+      "resist": "",
+      "comp": [],
+      "conditions": "Lumière vive -20",
+      "traits": "",
+      "cout": 4,
+      "budget": 6,
+      "description": "<p>Morsure 1d4 qui le soigne des PV infligés ; -20 aux tests et attaques en plein soleil</p>"
+     },
+     "_id": "89186accd04e6ba7"
+    },
+    {
+     "name": "Chasse",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "pister et capturer du gibier",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "12739abcde9b129d"
+    },
+    {
+     "name": "Discrétion",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "se cacher, se déplacer sans bruit",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "e54851669f4479e8"
+    },
+    {
+     "name": "Déguisement",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 20,
+      "domaine": "changer d'apparence ou d'identité",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "6d9d63fc1ada54de"
+    },
+    {
+     "name": "Perception",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "remarquer un détail, un piège, une présence",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "260d5016e0328f94"
+    },
+    {
+     "name": "Psychologie",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "deviner les intentions, détecter un mensonge",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "1f1f7ee4283e7343"
+    },
+    {
+     "name": "Survie",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "s'orienter, trouver abri et nourriture",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "3f67e32f9707620b"
+    },
+    {
+     "name": "Épée",
+     "type": "arme",
+     "system": {
+      "degats": "1d8",
+      "distance": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "5435ba3560f59ce3"
+    },
+    {
+     "name": "Armure de cuir",
+     "type": "armure",
+     "system": {
+      "valeur": 1,
+      "bouclier": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "bea287b4a6c6a4a6"
+    },
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     },
+     "_id": "e01d15696e5f3b43"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Dracula",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "_id": "62f2a7a399f482f4",
+   "name": "Humain 400",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 6
+     },
+     "ESP": {
+      "base": 13
+     },
+     "PRE": {
+      "base": 11
+     }
+    },
+    "pvDe": 2,
+    "pmDe": 5,
+    "pv": {
+     "value": 16,
+     "max": 16
+    },
+    "pm": {
+     "value": 30,
+     "max": 30
+    },
+    "budgetRace": 6,
+    "notes": ""
+   },
+   "items": [
+    {
+     "name": "Humain",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 1,
+       "ESP": 1,
+       "PRE": 0
+      },
+      "libres": 0,
+      "rangBonus": 1,
+      "pv": 0,
+      "pm": 0,
+      "armure": 0,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": false,
+      "drain": false,
+      "resist": "",
+      "comp": [],
+      "conditions": "",
+      "traits": "",
+      "cout": 5,
+      "budget": 6,
+      "description": "<p>+1 à deux caractéristiques au choix, une 7e compétence (Notion +5)</p>"
+     },
+     "_id": "600072d2a99b2a9b"
+    },
+    {
+     "name": "Artisanat",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "fabriquer ou réparer un objet",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "4516193ab8b90793"
+    },
+    {
+     "name": "Estimation",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 10,
+      "domaine": "évaluer la valeur ou l'authenticité",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "114c41f2611ccd09"
+    },
+    {
+     "name": "Premiers secours",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 20,
+      "domaine": "soigner une blessure sur le moment",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "1f2ce90fc3015dfa"
+    },
+    {
+     "name": "Psychologie",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "deviner les intentions, détecter un mensonge",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "a382a8d9b9d0dac4"
+    },
+    {
+     "name": "Représentation",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "chanter, jouer, raconter, divertir",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "c07a96a143e68441"
+    },
+    {
+     "name": "Survie",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "s'orienter, trouver abri et nourriture",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "19ff43601d3e4175"
+    },
+    {
+     "name": "Vol",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "vol à la tire / crochetage (voler dans les airs : à voir avec le MJ)",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "b0330ac823dcd695"
+    },
+    {
+     "name": "Épée",
+     "type": "arme",
+     "system": {
+      "degats": "1d8",
+      "distance": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "f957f17bc7765082"
+    },
+    {
+     "name": "Armure de cuir",
+     "type": "armure",
+     "system": {
+      "valeur": 1,
+      "bouclier": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "099be99f32aaf4a2"
+    },
+    {
+     "name": "Trait de force",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": "Un projectile d'énergie pure."
+     },
+     "_id": "9981fc70e454bb85"
+    },
+    {
+     "name": "Soin mineur",
+     "type": "sort",
+     "system": {
+      "type": "soin",
+      "valeur": "1d6",
+      "zone": false,
+      "ampleur": "",
+      "description": "Une main posée referme les blessures."
+     },
+     "_id": "b95cba7fd293e3c3"
+    },
+    {
+     "name": "Bénédiction",
+     "type": "sort",
+     "system": {
+      "type": "bonus",
+      "valeur": "",
+      "zone": false,
+      "ampleur": "",
+      "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié."
+     },
+     "_id": "fe87bfe58f6d1118"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Humain 400",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "_id": "7f154302f0b3275f",
+   "name": "Kron",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 10
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pvDe": 9,
+    "pmDe": 5,
+    "pv": {
+     "value": 40,
+     "max": 40
+    },
+    "pm": {
+     "value": 23,
+     "max": 23
+    },
+    "budgetRace": 6,
+    "notes": ""
+   },
+   "items": [
+    {
+     "name": "Ogre",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 3,
+       "ESP": -1,
+       "PRE": -1
+      },
+      "libres": 0,
+      "rangBonus": 0,
+      "pv": 5,
+      "pm": 0,
+      "armure": 0,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": false,
+      "drain": false,
+      "resist": "",
+      "comp": [
+       {
+        "nom": "Discrétion",
+        "carac": "COR",
+        "bonus": -10
+       }
+      ],
+      "conditions": "",
+      "traits": "Grande taille",
+      "cout": 3,
+      "budget": 6,
+      "description": "<p>Grande taille (+5 PV, -10 en Discrétion)</p>"
+     },
+     "_id": "3d771a57e867ff9d"
+    },
+    {
+     "name": "Artisanat",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "fabriquer ou réparer un objet",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "6bcc8aa6e6608b2a"
+    },
+    {
+     "name": "Chasse",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 20,
+      "domaine": "pister et capturer du gibier",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "f13c54165569abfb"
+    },
+    {
+     "name": "Connaissances",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "savoirs généraux, histoire, sciences",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "15f73d2fd254a220"
+    },
+    {
+     "name": "Perception",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 10,
+      "domaine": "remarquer un détail, un piège, une présence",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "4098a0d6ae1e885c"
+    },
+    {
+     "name": "Psychologie",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 5,
+      "domaine": "deviner les intentions, détecter un mensonge",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "57070d78f9cbd712"
+    },
+    {
+     "name": "Survie",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "s'orienter, trouver abri et nourriture",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "e324de43a27c40c8"
+    },
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     },
+     "_id": "8a264d64cedaa570"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Kron",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "_id": "cb165267449373e1",
+   "name": "Lupus",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 10
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pvDe": 5,
+    "pmDe": 10,
+    "pv": {
+     "value": 27,
+     "max": 27
+    },
+    "pm": {
+     "value": 31,
+     "max": 31
+    },
+    "budgetRace": 8,
+    "notes": ""
+   },
+   "items": [
+    {
+     "name": "Homme bête",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 1,
+       "ESP": 0,
+       "PRE": 1
+      },
+      "libres": 0,
+      "rangBonus": 0,
+      "pv": 0,
+      "pm": 0,
+      "armure": 2,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": true,
+      "drain": false,
+      "resist": "",
+      "comp": [
+       {
+        "nom": "Instinct naturelle",
+        "carac": "PRE",
+        "bonus": 20
+       }
+      ],
+      "conditions": "Chaleur -20\nFroid +20",
+      "traits": "",
+      "cout": 8,
+      "budget": 8,
+      "description": "<p>« Entre l'homme et la bête existe un peuple qui porte en lui la force de deux mondes. »</p><p>Les Hommes-bêtes sont une race née d'anciennes transformations magiques ayant mêlé la nature humaine à celle des animaux. Selon les légendes, ils seraient les descendants d'humains frappés par une malédiction, les sujets d'expériences de mages oubliés ou les héritiers d'un rituel destiné à unir les peuples aux forces de la nature. La vérité sur leur origine demeure incertaine, et chaque lignée conserve ses propres récits sur sa naissance.</p><p>Leur apparence varie considérablement selon leur ascendance animale. Certains possèdent un corps couvert de fourrure, un museau allongé, des oreilles dressées et une queue, tandis que d'autres arborent des écailles, des cornes, des bois ou des griffes acérées. Malgré ces différences, ils conservent généralement une silhouette humanoïde, leur permettant de manier des armes, de porter des vêtements et d'utiliser les outils des autres peuples. Leur regard, leurs traits et leur posture révèlent toutefois leur nature singulière.</p><p>Cette transformation leur confère souvent des capacités particulières héritées de leur ascendance. Un odorat développé, une ouïe fine, une vision adaptée à l'obscurité, une force supérieure ou une agilité remarquable comptent parmi leurs aptitudes les plus courantes. Ces facultés diffèrent d'une lignée à l'autre et ne constituent pas nécessairement des avantages sans contrepartie.</p><p>Les Hommes-bêtes ne forment pas un peuple uni. Leurs sociétés reflètent la diversité de leurs origines et de leurs environnements. Certaines lignées vivent en clans ou en meutes, privilégiant les liens de parenté, l'entraide et la loyauté envers les leurs. D'autres ont fondé des villages, des cités fortifiées ou des royaumes organisés, dotés de lois, de traditions et de structures politiques comparables à celles des civilisations humaines. Certaines communautés demeurent nomades, tandis que d'autres se sont pleinement intégrées aux sociétés des autres races.</p><p>Leur rapport au monde varie tout autant. Certains considèrent leur héritage animal comme une bénédiction, symbole de force et de proximité avec la nature. D'autres le perçoivent comme une marque imposée par la magie, dont ils cherchent à comprendre les origines ou à se libérer. Entre ces deux visions existent d'innombrables croyances, coutumes et philosophies.</p><p>Leur apparence leur vaut parfois la méfiance des autres peuples. Dans certaines régions, ils sont respectés pour leurs talents et leur courage ; dans d'autres, ils sont assimilés à des monstres ou à des créatures sauvages. Ces préjugés peuvent les pousser à se regrouper au sein de communautés isolées, mais ils n'empêchent pas nombre d'entre eux de devenir artisans, marchands, soldats, érudits ou aventuriers.</p><p>Malgré les différences qui les séparent, les Hommes-bêtes partagent une même particularité : ils portent en eux les traces visibles d'une magie ancienne qui a redéfini leur nature. Leur héritage ne détermine pourtant ni leur caractère ni leur destinée. Qu'ils vivent selon les traditions de leurs ancêtres ou qu'ils cherchent leur place parmi les autres peuples, chacun demeure libre de choisir ce qu'il fera de cette double nature.</p><p>Ainsi, les Hommes-bêtes ne sont ni tout à fait humains, ni tout à fait animaux. Ils sont un peuple à part entière, façonné par la magie, dont la diversité témoigne autant de la puissance de cette transformation que de la capacité des êtres vivants à s'adapter et à évoluer.</p>"
+     },
+     "_id": "1fb0b273980c096a"
+    },
+    {
+     "name": "Acrobaties",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 20,
+      "domaine": "sauter, rouler, garder l'équilibre",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "e0718df49b40ecf3"
+    },
+    {
+     "name": "Chasse",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "pister et capturer du gibier",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "964ce28bdd52d4f5"
+    },
+    {
+     "name": "Escamotage",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "tour de main, dissimuler un objet",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "67ac1e9d0a92d564"
+    },
+    {
+     "name": "Perception",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "remarquer un détail, un piège, une présence",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "156ca46036830828"
+    },
+    {
+     "name": "Premiers secours",
+     "type": "competence",
+     "system": {
+      "carac": "ESP",
+      "rang": 5,
+      "domaine": "soigner une blessure sur le moment",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "ce61c4d7ab7ec87f"
+    },
+    {
+     "name": "Survie",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "s'orienter, trouver abri et nourriture",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "6aebef05648f2216"
+    },
+    {
+     "name": "Hache",
+     "type": "arme",
+     "system": {
+      "degats": "1d8",
+      "distance": true,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "0c0908d95d071dce"
+    },
+    {
+     "name": "Armure de cuir",
+     "type": "armure",
+     "system": {
+      "valeur": 1,
+      "bouclier": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "0f4b59cd60fa1e9d"
+    },
+    {
+     "name": "Bouclier",
+     "type": "armure",
+     "system": {
+      "valeur": 0,
+      "bouclier": true,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "c6edb4c3291ef175"
+    },
+    {
+     "name": "Trait de force",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": "Un projectile d'énergie pure."
+     },
+     "_id": "a88422fa6c118187"
+    },
+    {
+     "name": "Soin mineur",
+     "type": "sort",
+     "system": {
+      "type": "soin",
+      "valeur": "1d6",
+      "zone": false,
+      "ampleur": "",
+      "description": "Une main posée referme les blessures."
+     },
+     "_id": "fe3faab227d4fd27"
+    },
+    {
+     "name": "Bénédiction",
+     "type": "sort",
+     "system": {
+      "type": "bonus",
+      "valeur": "",
+      "zone": false,
+      "ampleur": "",
+      "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié."
+     },
+     "_id": "2eff4be9883ebbb3"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Lupus",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  },
+  {
+   "_id": "ea1c0ee7f49fd789",
+   "name": "Snifi",
+   "type": "pj",
+   "img": "icons/svg/mystery-man.svg",
+   "system": {
+    "caracs": {
+     "COR": {
+      "base": 10
+     },
+     "ESP": {
+      "base": 10
+     },
+     "PRE": {
+      "base": 10
+     }
+    },
+    "pvDe": 7,
+    "pmDe": 8,
+    "pv": {
+     "value": 27,
+     "max": 27
+    },
+    "pm": {
+     "value": 29,
+     "max": 29
+    },
+    "budgetRace": 6,
+    "notes": ""
+   },
+   "items": [
+    {
+     "name": "Gobelin",
+     "type": "race",
+     "system": {
+      "mods": {
+       "COR": 0,
+       "ESP": 1,
+       "PRE": 0
+      },
+      "libres": 0,
+      "rangBonus": 0,
+      "pv": 0,
+      "pm": 0,
+      "armure": 0,
+      "regen": 0,
+      "rage": false,
+      "souffle": false,
+      "armeNaturelle": false,
+      "drain": false,
+      "resist": "",
+      "comp": [
+       {
+        "nom": "Discrétion",
+        "carac": "COR",
+        "bonus": 10
+       },
+       {
+        "nom": "Intimidation",
+        "carac": "PRE",
+        "bonus": -10
+       }
+      ],
+      "conditions": "Poison +20",
+      "traits": "Petite taille",
+      "cout": 4,
+      "budget": 6,
+      "description": "<p>Petite taille (+10 en Discrétion, -10 en Intimidation), +20 aux tests contre un poison</p>"
+     },
+     "_id": "bd9a682eecacf760"
+    },
+    {
+     "name": "Acrobaties",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "sauter, rouler, garder l'équilibre",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "a00d0ca66474f606"
+    },
+    {
+     "name": "Discrétion",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 20,
+      "domaine": "se cacher, se déplacer sans bruit",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "1d4e193e2db67847"
+    },
+    {
+     "name": "Déguisement",
+     "type": "competence",
+     "system": {
+      "carac": "PRE",
+      "rang": 10,
+      "domaine": "changer d'apparence ou d'identité",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "6cc42d03ba6ab722"
+    },
+    {
+     "name": "Escalade",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 10,
+      "domaine": "grimper à une paroi",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "c9907b0ade8142e7"
+    },
+    {
+     "name": "Escamotage",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "tour de main, dissimuler un objet",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "3aabaa9a5f95f166"
+    },
+    {
+     "name": "Survie",
+     "type": "competence",
+     "system": {
+      "carac": "COR",
+      "rang": 5,
+      "domaine": "s'orienter, trouver abri et nourriture",
+      "equivalent": "",
+      "taille": "precis",
+      "statut": "validee",
+      "noteMj": ""
+     },
+     "_id": "d32e3ebdaef5a90e"
+    },
+    {
+     "name": "Dague",
+     "type": "arme",
+     "system": {
+      "degats": "1d4",
+      "distance": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "70f177490ff5bba4"
+    },
+    {
+     "name": "Armure de cuir",
+     "type": "armure",
+     "system": {
+      "valeur": 1,
+      "bouclier": false,
+      "equipe": true,
+      "description": ""
+     },
+     "_id": "a11c6cec421e4595"
+    },
+    {
+     "name": "Sort",
+     "type": "sort",
+     "system": {
+      "type": "degats",
+      "valeur": "2d6",
+      "zone": false,
+      "ampleur": "",
+      "description": ""
+     },
+     "_id": "ea45c54b020a60b2"
+    }
+   ],
+   "prototypeToken": {
+    "name": "Snifi",
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+     "attribute": "pv"
+    },
+    "bar2": {
+     "attribute": "pm"
+    }
+   }
+  }
+ ]
+}

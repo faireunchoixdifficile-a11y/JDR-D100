@@ -1,0 +1,6 @@
+{
+  "TYPES": {
+    "Actor": { "pj": "Personnage", "adversaire": "Adversaire" },
+    "Item": { "race": "Race", "competence": "Compétence", "arme": "Arme", "armure": "Armure ou bouclier", "objet": "Objet", "sort": "Sort" }
+  }
+}
