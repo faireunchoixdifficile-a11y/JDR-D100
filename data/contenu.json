@@ -1,5 +1,5 @@
 {
- "generation": "2026-10-29T15:59:12",
+ "generation": "2026-10-29T20:05:22",
  "races": [
   {
    "name": "Humain",
@@ -356,7 +356,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -369,7 +370,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -382,7 +384,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -395,7 +398,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -408,7 +412,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -421,7 +426,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -434,7 +440,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -447,7 +454,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -460,7 +468,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -473,7 +482,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -486,7 +496,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -499,7 +510,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -512,7 +524,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -525,7 +538,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -538,7 +552,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -551,7 +566,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -564,7 +580,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -577,7 +594,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -590,7 +608,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -603,7 +622,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -616,7 +636,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   },
   {
@@ -629,7 +650,8 @@
     "equivalent": "",
     "taille": "precis",
     "statut": "validee",
-    "noteMj": ""
+    "noteMj": "",
+    "pouvoir": ""
    }
   }
  ],
@@ -806,7 +828,8 @@
     "valeur": "2d6",
     "zone": false,
     "ampleur": "",
-    "description": "Un projectile d'énergie pure."
+    "description": "Un projectile d'énergie pure.",
+    "discipline": ""
    }
   },
   {
@@ -817,7 +840,8 @@
     "valeur": "1d6",
     "zone": false,
     "ampleur": "",
-    "description": "Une main posée referme les blessures."
+    "description": "Une main posée referme les blessures.",
+    "discipline": ""
    }
   },
   {
@@ -828,7 +852,8 @@
     "valeur": "",
     "zone": false,
     "ampleur": "",
-    "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié."
+    "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié.",
+    "discipline": ""
    }
   }
  ],
@@ -1349,15 +1374,15 @@
      "max": 14
     },
     "pm": {
-     "value": 6,
-     "max": 6
+     "value": 8,
+     "max": 8
     },
     "rang": "Standard",
     "cout": 2,
     "attaque": 45,
     "degats": "1d6+1",
     "armureBase": 1,
-    "trait": "Fanatique ; lance deux sorts maudits (3 PM chacun) puis se bat au couteau.",
+    "trait": "Fanatique ; lance deux sorts maudits (4 PM chacun) puis se bat au couteau.",
     "race": "",
     "element": "",
     "resist": "",
@@ -1379,7 +1404,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      }
     }
    ],
@@ -1746,15 +1772,15 @@
      "max": 22
     },
     "pm": {
-     "value": 12,
-     "max": 12
+     "value": 16,
+     "max": 16
     },
     "rang": "Élite",
     "cout": 4,
     "attaque": 40,
     "degats": "1d6+1",
     "armureBase": 0,
-    "trait": "Reste en retrait derrière ses sbires ; lance jusqu'à quatre sorts (3 PM chacun).",
+    "trait": "Reste en retrait derrière ses sbires ; lance jusqu'à quatre sorts (4 PM chacun).",
     "race": "",
     "element": "",
     "resist": "",
@@ -1776,7 +1802,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      }
     }
    ],
@@ -1923,15 +1950,15 @@
      "max": 40
     },
     "pm": {
-     "value": 15,
-     "max": 15
+     "value": 20,
+     "max": 20
     },
     "rang": "Boss",
     "cout": 8,
     "attaque": 50,
     "degats": "1d8+1",
     "armureBase": 1,
-    "trait": "Relève les morts ; entouré de squelettes ; jusqu'à cinq sorts (3 PM chacun).",
+    "trait": "Relève les morts ; entouré de squelettes ; jusqu'à cinq sorts (4 PM chacun).",
     "race": "",
     "element": "",
     "resist": "",
@@ -1953,7 +1980,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      }
     }
    ],
@@ -3636,7 +3664,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "a134f875b3c5507a"
     },
@@ -3650,7 +3679,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "adafa1147c0e0743"
     },
@@ -3664,7 +3694,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "4792430dfaccbde3"
     },
@@ -3678,7 +3709,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "8cf7f901ec567062"
     },
@@ -3692,7 +3724,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "fed69d8843e1cb8e"
     },
@@ -3706,7 +3739,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "863b56c0be21c477"
     },
@@ -3720,7 +3754,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "372796c4911c1077"
     },
@@ -3743,7 +3778,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      },
      "_id": "ba86c51b3ddade1e"
     }
@@ -3830,7 +3866,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "04926ffe6d285bdb"
     },
@@ -3844,7 +3881,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "1ef39bdc1d787d72"
     },
@@ -3858,7 +3896,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "57439abd99008f40"
     },
@@ -3872,7 +3911,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "8c6178a9a426bcc3"
     },
@@ -3886,7 +3926,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "5594a6fb620a8e1d"
     },
@@ -3900,7 +3941,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "30fc73f29664aaad"
     },
@@ -3914,7 +3956,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "b04b65d6f348e54b"
     },
@@ -3948,7 +3991,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      },
      "_id": "903ae9fb6115e54f"
     }
@@ -4035,7 +4079,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "12739abcde9b129d"
     },
@@ -4049,7 +4094,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "e54851669f4479e8"
     },
@@ -4063,7 +4109,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "6d9d63fc1ada54de"
     },
@@ -4077,7 +4124,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "260d5016e0328f94"
     },
@@ -4091,7 +4139,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "1f1f7ee4283e7343"
     },
@@ -4105,7 +4154,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "3f67e32f9707620b"
     },
@@ -4139,7 +4189,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      },
      "_id": "e01d15696e5f3b43"
     }
@@ -4226,7 +4277,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "4516193ab8b90793"
     },
@@ -4240,7 +4292,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "114c41f2611ccd09"
     },
@@ -4254,7 +4307,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "1f2ce90fc3015dfa"
     },
@@ -4268,7 +4322,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "a382a8d9b9d0dac4"
     },
@@ -4282,7 +4337,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "c07a96a143e68441"
     },
@@ -4296,7 +4352,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "19ff43601d3e4175"
     },
@@ -4310,7 +4367,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "b0330ac823dcd695"
     },
@@ -4344,7 +4402,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": "Un projectile d'énergie pure."
+      "description": "Un projectile d'énergie pure.",
+      "discipline": ""
      },
      "_id": "9981fc70e454bb85"
     },
@@ -4356,7 +4415,8 @@
       "valeur": "1d6",
       "zone": false,
       "ampleur": "",
-      "description": "Une main posée referme les blessures."
+      "description": "Une main posée referme les blessures.",
+      "discipline": ""
      },
      "_id": "b95cba7fd293e3c3"
     },
@@ -4368,7 +4428,8 @@
       "valeur": "",
       "zone": false,
       "ampleur": "",
-      "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié."
+      "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié.",
+      "discipline": ""
      },
      "_id": "fe87bfe58f6d1118"
     }
@@ -4461,7 +4522,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "6bcc8aa6e6608b2a"
     },
@@ -4475,7 +4537,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "f13c54165569abfb"
     },
@@ -4489,7 +4552,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "15f73d2fd254a220"
     },
@@ -4503,7 +4567,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "4098a0d6ae1e885c"
     },
@@ -4517,7 +4582,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "57070d78f9cbd712"
     },
@@ -4531,7 +4597,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "e324de43a27c40c8"
     },
@@ -4543,7 +4610,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      },
      "_id": "8a264d64cedaa570"
     }
@@ -4636,7 +4704,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "e0718df49b40ecf3"
     },
@@ -4650,7 +4719,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "964ce28bdd52d4f5"
     },
@@ -4664,7 +4734,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "67ac1e9d0a92d564"
     },
@@ -4678,7 +4749,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "156ca46036830828"
     },
@@ -4692,7 +4764,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "ce61c4d7ab7ec87f"
     },
@@ -4706,7 +4779,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "6aebef05648f2216"
     },
@@ -4751,7 +4825,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": "Un projectile d'énergie pure."
+      "description": "Un projectile d'énergie pure.",
+      "discipline": ""
      },
      "_id": "a88422fa6c118187"
     },
@@ -4763,7 +4838,8 @@
       "valeur": "1d6",
       "zone": false,
       "ampleur": "",
-      "description": "Une main posée referme les blessures."
+      "description": "Une main posée referme les blessures.",
+      "discipline": ""
      },
      "_id": "fe3faab227d4fd27"
     },
@@ -4775,7 +4851,8 @@
       "valeur": "",
       "zone": false,
       "ampleur": "",
-      "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié."
+      "description": "Un coup de pouce du destin : +20 à la prochaine attaque d'un allié.",
+      "discipline": ""
      },
      "_id": "2eff4be9883ebbb3"
     }
@@ -4873,7 +4950,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "a00d0ca66474f606"
     },
@@ -4887,7 +4965,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "1d4e193e2db67847"
     },
@@ -4901,7 +4980,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "6cc42d03ba6ab722"
     },
@@ -4915,7 +4995,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "c9907b0ade8142e7"
     },
@@ -4929,7 +5010,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "3aabaa9a5f95f166"
     },
@@ -4943,7 +5025,8 @@
       "equivalent": "",
       "taille": "precis",
       "statut": "validee",
-      "noteMj": ""
+      "noteMj": "",
+      "pouvoir": ""
      },
      "_id": "d32e3ebdaef5a90e"
     },
@@ -4977,7 +5060,8 @@
       "valeur": "2d6",
       "zone": false,
       "ampleur": "",
-      "description": ""
+      "description": "",
+      "discipline": ""
      },
      "_id": "ea45c54b020a60b2"
     }

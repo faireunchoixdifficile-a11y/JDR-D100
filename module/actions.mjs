@@ -183,7 +183,8 @@ export async function lancerSort(actor, sort) {
   const lignes = [`${esc(actor.name)} lance « ${esc(sort.name)} » (${cout} PM)${sp.zone ? " en zone" : ""}`];
   const rolls = [];
   let boutons = "";
-  const seuil = s.caracs.ESP.value * 5 - s.malus;
+  const disc = sp.discipline ? actor.items.find((i) => i.type === "competence" && i.name === sp.discipline && i.system.pouvoir && i.system.statut !== "refusee") : null;
+  const seuil = s.caracs.ESP.value * 5 + (disc?.system.bonus ?? 0) - s.malus;
   const sansCible = sp.type === "narratif" ? [null] : cs;
   for (const c of sansCible) {
     const modif = offensif ? R.modifOffensif({ defenseCible: c.system.defense, extra, tireur: true, cibleCouverte: !!c.system.etat.couvert }) : extra;

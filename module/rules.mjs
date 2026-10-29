@@ -12,7 +12,7 @@ export const COUT_FIXE_SORT = { bonus: 2, malus: 2, armure: 3 };
 export const COUT_AMPLEUR = { mineur: 1, moyen: 3, majeur: 5 };
 export const SURCOUT_ZONE = 2;
 export const COUT_DEGATS_ARME = { "1d4": 1, "1d6": 2, "1d8": 3, "1d10": 4, "2d6": 5 };
-export const BUDGET_EQUIP = 6, BUDGET_RACE = 6, BUDGET_RACE_MJ = 8, MAX_SORTS = 3;
+export const BUDGET_EQUIP = 6, BUDGET_RACE = 6, BUDGET_RACE_MJ = 8, MAX_SORTS = 5, MAX_SORTS_DEPART = 3, SURCOUT_SORT = 1, COUT_SORT_MAX = 10;
 export const POINTS_CARAC = 30;
 /** Sans arme (ou sans armure) précisée, le programme applique l'arme et l'armure par défaut du MJ. */
 export const ARME_DEFAUT = "1d8", ARMURE_DEFAUT = 1;
@@ -79,9 +79,10 @@ export function coutSort(s) {
   let base;
   if (s.type === "degats" || s.type === "soin") base = COUT_DES_SORT[s.valeur] ?? 99;
   else if (s.type in COUT_FIXE_SORT) base = COUT_FIXE_SORT[s.type];
-  else if (s.type === "narratif") return COUT_AMPLEUR[s.ampleur] ?? 99;
+  else if (s.type === "narratif") base = COUT_AMPLEUR[s.ampleur] ?? 99;
   else return 99;
-  return base + (s.zone ? SURCOUT_ZONE : 0);
+  if (base >= 99) return 99;
+  return base + (s.type === "narratif" ? 0 : (s.zone ? SURCOUT_ZONE : 0)) + SURCOUT_SORT;
 }
 
 /** Points d'équipement dépensés : arme (dés + tir), armure, bouclier, objets à bonus (1 pt chacun). */

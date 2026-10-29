@@ -148,6 +148,7 @@ export class CompetenceData extends TypeDataModel {
       taille: choix({ precis: "Précis", large: "Large", meta: "Méta" }, "precis"),
       statut: choix({ proposee: "À valider", validee: "Validée", refusee: "Refusée" }, "validee"),
       noteMj: texte(""),
+      pouvoir: texte(""),      // famille de pouvoir : magie, divin, psychique, science, technologie (vide = compétence ordinaire)
     };
   }
   prepareDerivedData() { this.bonus = R.bonusEffectif(this.rang, this.taille, this.statut); }
@@ -176,6 +177,7 @@ export class SortData extends TypeDataModel {
     return {
       type: choix({ degats: "Dégâts", soin: "Soin", bonus: "Bonus (+20)", malus: "Malus (-20)", armure: "Armure magique (+2)", narratif: "Effet libre" }, "degats"),
       valeur: texte("2d6"), zone: new f.BooleanField({ initial: false }), ampleur: texte(""), description: texte(""),
+      discipline: texte(""),   // nom d'une compétence de pouvoir : son bonus s'ajoute au seuil Esprit x 5
     };
   }
   prepareDerivedData() { this.cout = R.coutSort(this); }

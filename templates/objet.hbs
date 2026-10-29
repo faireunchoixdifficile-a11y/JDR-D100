@@ -57,6 +57,7 @@
       <label>Taille du domaine <select name="system.taille">{{#each tailles}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
       <label>État <select name="system.statut" {{#unless gm}}{{/unless}}>{{#each statuts}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
     </div>
+    <label class="d100-bloc-texte">Pouvoir (magie, divin, psychique, science, technologie ; vide = aucun)<input type="text" name="system.pouvoir" value="{{system.pouvoir}}"></label>
     <p class="d100-aide">Bonus effectif : <strong>+{{system.bonus}}</strong>. Seul le MJ devrait modifier l'état et corriger la taille.</p>
     <label class="d100-bloc-texte">Note du MJ<input type="text" name="system.noteMj" value="{{system.noteMj}}"></label>
   </section>
@@ -93,7 +94,8 @@
       <label>Ampleur (effet libre) <select name="system.ampleur">{{#each ampleurs}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
       <label><input type="checkbox" name="system.zone" {{#if system.zone}}checked{{/if}}> Zone (+2 PM, effets ÷ 2)</label>
     </div>
-    <p class="d100-aide">Coût : <strong>{{system.cout}} PM</strong> (9 PM au maximum). 3 sorts au maximum.</p>
+    <p class="d100-aide">Coût : <strong>{{system.cout}} PM</strong> (10 PM au maximum, dont +1 PM par sort). 3 sorts au départ, 5 au maximum.</p>
+    <label class="d100-bloc-texte">Discipline (nom d'une compétence de pouvoir, bonus au seuil)<input type="text" name="system.discipline" value="{{system.discipline}}"></label>
     <label class="d100-bloc-texte">Description<textarea name="system.description" rows="3">{{system.description}}</textarea></label>
   </section>
   {{/if}}
